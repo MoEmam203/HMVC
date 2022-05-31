@@ -2,6 +2,7 @@
 
 return [
     "prefix" => [
-        "backend" => "backend"
+        "backend"   => "backend",
+        "frontend"  => "frontend"
     ]
 ];

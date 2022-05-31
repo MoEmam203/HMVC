@@ -2,7 +2,8 @@
 
 return [
     // "prefix" => [
-    //     "backend" => "admin"
+    //     "backend"    => "admin",
+    //      "frontend"  => "site"
     // ],
     'module-name' => 'customers'
 ];
