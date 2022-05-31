@@ -28,7 +28,8 @@
             "Customers\\" : "app/Modules/Customers"
         },
         "files": [
-            "app/helpers/routes.php"
+            "app/helpers/routes.php",
+            "app/helpers/views.php"
         ]
     },
     "autoload-dev": {
