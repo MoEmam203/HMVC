@@ -1,7 +1,7 @@
 <?php
 
-return [
-    "prefix" => [
-        "backend" => "admin"
-    ]
-];
+// return [
+//     "prefix" => [
+//         "backend" => "admin"
+//     ]
+// ];
