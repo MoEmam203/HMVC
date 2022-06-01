@@ -25,7 +25,8 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
-            "Customers\\" : "app/Modules/Customers"
+            "Customers\\" : "app/Modules/Customers",
+            "Customers\\Database\\Seeders\\" : "app/Modules/Customers/database/seeders/"
         },
         "files": [
             "app/helpers/routes.php",
