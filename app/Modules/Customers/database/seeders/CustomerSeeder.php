@@ -2,6 +2,7 @@
 
 namespace Customers\Database\Seeders;
 
+use Customers\Models\Customer;
 use Illuminate\Database\Seeder;
 
 class CustomerSeeder extends Seeder
@@ -13,6 +14,8 @@ class CustomerSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Customer::create([
+            'name' => 'mustafa'
+        ]);
     }
 }
