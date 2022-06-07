@@ -24,7 +24,7 @@ class CustomerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $moduleName = 'customers';
+        $moduleName = strtolower(basename(dirname(__DIR__,1)));
         config([
             $moduleName => File::getRequire(getConfigFile($moduleName,'routes'))
         ]);
