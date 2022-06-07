@@ -30,7 +30,8 @@
         },
         "files": [
             "app/helpers/routes.php",
-            "app/helpers/views.php"
+            "app/helpers/views.php",
+            "app/helpers/path.php"
         ]
     },
     "autoload-dev": {

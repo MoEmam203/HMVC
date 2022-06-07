@@ -24,14 +24,13 @@ class CustomerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $ds =  DIRECTORY_SEPARATOR;
         $moduleName = 'customers';
         config([
-            $moduleName => File::getRequire(__DIR__.$ds.'..'.$ds.'config'.$ds.'routes.php')
+            $moduleName => File::getRequire(getConfigFile($moduleName,'routes'))
         ]);
-        $this->loadRoutesFrom(__DIR__.$ds.'..'.$ds.'routes'.$ds.'web.php');
-        $this->loadViewsFrom(__DIR__.$ds.'..'.$ds.'resources'.$ds.'views',$moduleName);
-        $this->loadTranslationsFrom(__DIR__.$ds.'..'.$ds.'resources'.$ds.'lang',$moduleName);
-        $this->loadMigrationsFrom(__DIR__.$ds.'..'.$ds.'database'.$ds.'migrations');
+        $this->loadRoutesFrom(loadRoutes($moduleName,'web'));
+        $this->loadViewsFrom(loadViews($moduleName),$moduleName);
+        $this->loadTranslationsFrom(loadLangs($moduleName),$moduleName);
+        $this->loadMigrationsFrom(loadMigrations($moduleName));
     }
 }
